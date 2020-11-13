@@ -16,7 +16,7 @@ $image_name = $_GET['image_name'];
 
 $query = "SELECT url FROM images WHERE name='$image_name'";
 $res = mysqli_query($link, $query) or die(mysqli_error($link));
-var_dump($res);
+//var_dump($res);
 $row = mysqli_fetch_row($res);
 
 header('Location: '.$row[0]);
