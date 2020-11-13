@@ -11,8 +11,6 @@ if (!$link) {
   echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
   exit;
 }
-use function call_user_func as f;
-use UnexpectedValueException as e;
 
 $image_name = $_GET['image_name'];
 
